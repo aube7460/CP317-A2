@@ -1,0 +1,19 @@
+
+#about:after
+{
+background:  url("images/user.png") 50% 50% no-repeat;
+background-size: 20px 22px;
+}
+
+#work:after
+{
+background:  url("images/printer.png") 50% 50% no-repeat;
+background-size: 20px 22px;
+}
+
+#play:after
+{
+background:  url("images/book.png") 50% 50% no-repeat;
+background-size: 20px 22px;
+}
+

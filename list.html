@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!--
+*
+*
+*
+-->
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="JQuery/jquery.mobile-1.4.5.css" />
+	<script src="JQuery/jquery-1.11.1.min.js"></script>
+	<script src="JQuery/jquery.mobile-1.4.5.js"></script>
+
+</head> 
+
+<body>
+	<div data-role="page" id="list" class="type-interior" data-theme="a">
+	
+	<div data-role="header" data-theme="a">
+		<a onClick='$.mobile.changePage("index.html", {transition :"slide"});' data-role="button" data-icon="arrow-l">Back</a>
+		<h1> Group Members </h1>
+		<a onClick='$.mobile.changePage("index.html", {transition :"slide"});' data-role="button" data-icon="home">Home</a>
+		
+	</div><!-- /header -->
+	
+	
+	<div data-role="content" data-theme="a">
+	<div class="content-primary" data-theme="a">	
+		<ul data-role="listview" data-filter="true" data-theme="a">
+
+			<li><a onClick='localStorage.setItem("name","Jason"); $.mobile.changePage("about.html", {transition :"slideup"});'>
+			<img src="images/Jason.png" />
+			Jason Aubert
+			</a></li>
+			
+			<li><a onClick='localStorage.setItem("name","Bojan"); $.mobile.changePage("about.html", {transition :"slideup"});'>
+			<img src="images/Bojan.png" />
+			<h3>Bojan Krtinic</h3>
+			</a></li>
+		</ul>
+	</div><!--/content-primary -->	
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Group member bio</title>
+	<link rel="stylesheet" href="JQuery/jquery.mobile-1.4.5.css" />
+	<script src="JQuery/jquery-1.11.1.min.js"></script>
+	<script src="JQuery/jquery.mobile-1.4.5.js"></script>
+	<script src="JQuery/about.js"></script>
+	<link rel="stylesheet" href="JQuery/about.css" />	
+</head>
+
+<body onLoad="onBodyLoad();">
+	<div data-role="page" id="about" class="page">
+		<!-- /header -->
+		<div data-role="header" data-theme="a">
+			<a onClick='$.mobile.changePage("list.html", {transition :"slide"});' data-role="button" data-icon="arrow-l">Back</a>
+			<h1>Name of group member</h1>
+			<a onClick='$.mobile.changePage("index.html", {transition :"slide"});' data-role="button" data-icon="home">Home</a>
+		</div> <!-- /header close -->
+
+		<!-- /body -->
+		<div id="info" class="info">
+		</div>
+		<!-- /body close -->
+
+		<!-- /footer -->	
+		<div data-role="footer" data-id="footer" data-position="fixed">
+			<!-- /navbar -->
+			<div data-role="navbar" data-iconpos="top" >
+
+				<ul>
+				<li><a href="#" id="about" onclick="populatePage('about');" data-icon="custom" class="ui-btn-active ui-state-persist">About</a></li>
+				<li><a href="#" id="work" onclick="populatePage('work');" data-icon="custom">Work</a></li>
+				<li><a href="#" id="play" onclick="populatePage('play');" data-icon="custom">Play</a></li>
+				</ul>
+
+			</div><!-- /navbar close -->
+		</div><!-- /footer close -->
+	</div>
+</body>
+</html>
+

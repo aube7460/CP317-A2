@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.3" rim:header="RIM-Widget:rim/widget">
+  <name>Hello Laurier</name>
+  <description>Assignment 2 for CP317</description>
+  <author rim:copyright="2015">Group 5</author>
+  <icon rim:hover="false" src="images/logo.png"/>
+  <icon rim:hover="true" src="image/logo.png"/>
+  <content src="index.html"/>
+</widget>
